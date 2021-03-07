@@ -1,0 +1,25 @@
+{
+    "n": {
+        "name": "",
+        "insti": "",
+        "short_desc": "",
+        "about": [],
+        "details": [],
+        "prize": "",
+        "judge": [],
+        "rules": {
+            "eligible": [],
+            "guide": []
+        },
+        "submission": [],
+        "timeline": [],
+        "contact": [
+            {
+                "name": "",
+                "phone": "",
+                "insta": "",
+                "mail": ""
+            }
+        ]
+    }
+}
