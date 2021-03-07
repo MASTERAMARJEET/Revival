@@ -12,7 +12,7 @@ class DetailsPage extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Image.asset(
-            'assets/logo.png',
+            'assets/images/logo.png',
             scale: 2,
             fit: BoxFit.contain,
           ),
@@ -31,7 +31,7 @@ class DetailsPage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.cyan[200],
               ),
-              child: Image.asset('assets/logo.png'),
+              child: Image.asset('assets/images/logo.png'),
             ),
             ListTile(
               leading: Icon(Icons.calendar_today),
@@ -61,7 +61,7 @@ class DetailsPage extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/bg.png'),
+                image: AssetImage('assets/images/bg.png'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -70,7 +70,7 @@ class DetailsPage extends StatelessWidget {
             right: 40.0,
             bottom: 20.0,
             child: Image.asset(
-              'assets/slashdot.png',
+              'assets/images/slashdot.png',
               height: 20.0,
             ),
           ),

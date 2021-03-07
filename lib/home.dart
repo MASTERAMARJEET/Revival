@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Center(
           child: Image.asset(
-            'assets/logo.png',
+            'assets/images/logo.png',
             scale: 2,
             fit: BoxFit.contain,
           ),
@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
               decoration: BoxDecoration(
                 color: Colors.cyan[200],
               ),
-              child: Image.asset('assets/logo.png'),
+              child: Image.asset('assets/images/logo.png'),
             ),
             ListTile(
               leading: Icon(Icons.calendar_today),
@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage('assets/bg.png'),
+                image: AssetImage('assets/images/bg.png'),
                 fit: BoxFit.cover,
               ),
             ),
@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
             right: 40.0,
             bottom: 20.0,
             child: Image.asset(
-              'assets/slashdot.png',
+              'assets/images/slashdot.png',
               height: 20.0,
             ),
           ),
@@ -81,7 +81,7 @@ class HomePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                Image.asset('assets/pheonix.png'),
+                Image.asset('assets/images/pheonix.png'),
                 ElevatedButton(
                     onPressed: () => Navigator.pushNamed(context, '/events'),
                     child: Text('Explore'))
