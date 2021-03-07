@@ -162,18 +162,16 @@
             "The video file should not be more than 500 mb in size.",
             "The video should be in MP4 format specifically.",
             "Please use the nomenclature. Name_Institution code (e.g., Naman Mishra_10). Please find the institution code at the end of this rulebook. Institute codes: S. No. is the code.",
-            [
-                "Indian Institute of Science Education and Research, Kolkata",
-                "Indian Institute of Science Education and Research, Tirupati",
-                "Indian Institute of Science Education and Research, Bhopal",
-                "Indian Institute of Science Education and Research, Pune",
-                "Indian Institute of Science Education and Research, Berhampur",
-                "Indian Institute of Science Education and Research, Mohali",
-                "Indian Institute of Science Education and Research, Thiruvananthapuram",
-                "National Institute of Science Education and Research, Bhubaneshwar",
-                "Indian Institution of Science, Bangalore",
-                "Centre for Excellence in Basic Sciences, Mumbai"
-            ]
+            "1. Indian Institute of Science Education and Research, Kolkata",
+            "2. Indian Institute of Science Education and Research, Tirupati",
+            "3. Indian Institute of Science Education and Research, Bhopal",
+            "4. Indian Institute of Science Education and Research, Pune",
+            "5. Indian Institute of Science Education and Research, Berhampur",
+            "6. Indian Institute of Science Education and Research, Mohali",
+            "7. Indian Institute of Science Education and Research, Thiruvananthapuram",
+            "8. National Institute of Science Education and Research, Bhubaneshwar",
+            "9. Indian Institution of Science, Bangalore",
+            "10. Centre for Excellence in Basic Sciences, Mumbai"
         ],
         "timeline": [
             "March 8th: Google form Registrations open.",
@@ -240,8 +238,8 @@
         ],
         "details": [
             "The event consists of two parts:",
-            "A: Make a 4−panel comic using pictures you clicked, by adding drawings/text on top with a digital drawing/editing software",
-            "B: Transform 1 image that you’ve clicked by adding drawings/text on top with a digital drawing/editing software",
+            "\t A: Make a 4−panel comic using pictures you clicked, by adding drawings/text on top with a digital drawing/editing software",
+            "\t B: Transform 1 image that you’ve clicked by adding drawings/text on top with a digital drawing/editing software",
             "1. All the entries will be uploaded on social media by the Revival committee.",
             "2. Entries must be submitted using the google form which will be circulated",
             "3. This is a solo online event."
@@ -256,36 +254,28 @@
             ],
             "guide": [
                 "Participant’s Guidelines",
-                [
-                    "1. Only digital submissions are accepted, i.e. the participant cannot take a printout of their picture and draw over it.",
-                    "Comic has to be 4 panels in length.",
-                    "One entry per event per person is allowed, i.e. a person can have two entries in total.",
-                    "Both events will be judged separately.",
-                    "You cannot overlay pre−existing ClipArt over the images for the events, everything will have to be hand−drawn. You can however edit text onto the image.",
-                    "The picture has to be clicked by the participant. You will have to provide EXIF information of the images used for verification. (details mentioned below)",
-                    "There is no particular theme for the comic/image, just go with the flow!",
-                    "There will be 3 judges for the event, and judging will be based on how unique the idea is, and how much it makes us feel/think.",
-                    "Name your entry in the format, Name_Institute"
-                ],
+                "1. Only digital submissions are accepted, i.e. the participant cannot take a printout of their picture and draw over it.",
+                "2. Comic has to be 4 panels in length.",
+                "3. One entry per event per person is allowed, i.e. a person can have two entries in total.",
+                "4. Both events will be judged separately.",
+                "5. You cannot overlay pre−existing ClipArt over the images for the events, everything will have to be hand−drawn. You can however edit text onto the image.",
+                "6. The picture has to be clicked by the participant. You will have to provide EXIF information of the images used for verification. (details mentioned below)",
+                "7. There is no particular theme for the comic/image, just go with the flow!",
+                "8. There will be 3 judges for the event, and judging will be based on how unique the idea is, and how much it makes us feel/think.",
+                "9. Name your entry in the format, Name_Institute",
                 "Note that we’re putting a cap on the “advancedness” of the software to make it fair to participants who might not have access to most tools",
                 "Apps that can be used for the event :",
-                [
-                    "PicsArt",
-                    "Autodesk Sketchbook",
-                    "Instagram",
-                    "Google Storyboard (for comics)",
-                    "Adobe Inkscape (laptop only)"
-                ],
+                "- PicsArt",
+                "- Autodesk Sketchbook",
+                "- Instagram",
+                "- Google Storyboard (for comics)",
+                "- Adobe Inkscape (laptop only)",
                 "EXIF information :",
-                [
-                    "Share EXIF info for each of the images used.",
-                    [
-                        "To find EXIF info in the gallery app go to the menu and tap on info.",
-                        "For Google photos you just need to swipe up to find EXIF info.",
-                        "If you're using a PC just right click on the photo and go to properties to find EXIF info."
-                    ],
-                    "Share the original image you used to create the entry."
-                ]
+                "1. Share EXIF info for each of the images used.",
+                "2.a. To find EXIF info in the gallery app go to the menu and tap on info.",
+                "2.b. For Google photos you just need to swipe up to find EXIF info.",
+                "2.c. If you're using a PC just right click on the photo and go to properties to find EXIF info.",
+                "3. Share the original image you used to create the entry."
             ]
         },
         "submission": [
@@ -318,7 +308,7 @@
         "insti": "IISER Kolkata",
         "short_desc": "Online Musico-Visual Competition",
         "about": [
-            "The Music Club of IISER Kolkata(@musicclubofiiserk) presents LAZARUS, an online music competition, unlike any other, in the history of time.",
+            "The Music Club of IISER Kolkata (@musicclubofiiserk) presents LAZARUS, an online music competition, unlike any other, in the history of time.",
             "To put it straight, one has to interpret a few visual art forms (paintings/graphics/photograph) and express their interpretation through musical performance of their own.",
             "So grab your guitars and sitars and be ready for a musical adventure of a lifetime."
         ],
@@ -423,17 +413,15 @@
             "eligible": [],
             "guide": [
                 "Solo Event.",
-                [
-                    "Each poem must be of the poet’s own creation.",
-                    "Memorization is not required or necessary. The poet may choose to read off a sheet of paper or notebook or read off of their phone(s).",
-                    "Each poet gets three minutes (plus a ten-second grace period) to read one poem. If the poet goes over time, points will be deducted from the total score by the scorekeeper. The poem/performance will lose .5 (point 5) off of their score for each 10 seconds they go over.",
-                    "The poet may NOT use props, costumes, pre-recorded/taped music, or musical instruments while performing. It’s just you and your poem on stage. BUT you are allowed to sing or beat box or make any other sounds with your body in your performance.",
-                    "There is NO restriction on language used in the poem. Any language, even multiple languages, may be used. However, each poet must provide translations for every non-English word used in the poem. If the entire poem is in a language other than English, then a full translation (effective translation, not a word-by-word translation necessarily) must be provided.",
-                    "The time required to read/narrate the translation will NOT be counted in the 3 mins that are allotted to every participant. Extra 3 mins will be given (without penalty) if the poet has to offer a translation.",
-                    "The poem may NOT include sexist, racist, homophobic, or transphobic comments. However anger, upset and frustration are totally legit emotions to express in your poem, just be creative in how you go about doing it.",
-                    "The poet receives scores out of 10 from each judge.",
-                    "Registration forms will be sent out and the participants must register before the event. NO unregistered participation request will be entertained on the day of the event itself."
-                ]
+                "Each poem must be of the poet’s own creation.",
+                "Memorization is not required or necessary. The poet may choose to read off a sheet of paper or notebook or read off of their phone(s).",
+                "Each poet gets three minutes (plus a ten-second grace period) to read one poem. If the poet goes over time, points will be deducted from the total score by the scorekeeper. The poem/performance will lose .5 (point 5) off of their score for each 10 seconds they go over.",
+                "The poet may NOT use props, costumes, pre-recorded/taped music, or musical instruments while performing. It’s just you and your poem on stage. BUT you are allowed to sing or beat box or make any other sounds with your body in your performance.",
+                "There is NO restriction on language used in the poem. Any language, even multiple languages, may be used. However, each poet must provide translations for every non-English word used in the poem. If the entire poem is in a language other than English, then a full translation (effective translation, not a word-by-word translation necessarily) must be provided.",
+                "The time required to read/narrate the translation will NOT be counted in the 3 mins that are allotted to every participant. Extra 3 mins will be given (without penalty) if the poet has to offer a translation.",
+                "The poem may NOT include sexist, racist, homophobic, or transphobic comments. However anger, upset and frustration are totally legit emotions to express in your poem, just be creative in how you go about doing it.",
+                "The poet receives scores out of 10 from each judge.",
+                "Registration forms will be sent out and the participants must register before the event. NO unregistered participation request will be entertained on the day of the event itself."
             ]
         },
         "submission": [],
