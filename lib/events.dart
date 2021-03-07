@@ -1,6 +1,5 @@
-// import 'dart:ui';
-
 import 'package:flutter/material.dart';
+
 import './details.dart';
 import './event/event_model.dart';
 import './event/event_services.dart';
