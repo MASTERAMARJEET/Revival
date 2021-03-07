@@ -3,6 +3,17 @@
 This repository contains flutter code for developing android (and maybe iOS) app for [Revival].
 
 Revival is an online extravaganza being organized by a consortium of leading Indian research institutions such as the IISc, the IISERs, the NISER and the CEBS. Revival shall witness participation from all across the country, representing each one of the partnering institutes.
+
+### TODO
+A list of things to implement:
+  - [x] Create simple demo layout based on the website.
+  - [x] Add details related to each event.
+  - [ ] Add register for each event.
+  - [ ] Add contact details for each event with proper url launching.
+  - [ ] Fill up About page.
+  - [ ] Enable pdf download for schedule and faq.
+  - [ ] Dark Mode ??
+
 ## Getting Started with Flutter
 
 A few resources to get you started if this is your first Flutter project:
