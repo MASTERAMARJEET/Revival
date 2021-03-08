@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:demo/widgets/register_btn.dart';
 import 'package:flutter/material.dart';
 
 import './event/event_model.dart';
@@ -73,7 +76,7 @@ class DetailsPage extends StatelessWidget {
                 left: 20.0,
                 right: 20.0,
                 top: 20.0,
-                bottom: 45.0,
+                bottom: 40.0,
               ),
               child: ListView(
                 children: <Widget>[
@@ -93,16 +96,10 @@ class DetailsPage extends StatelessWidget {
                   ContactWidget("Contact Details", eventDetail.contact ?? []),
                 ],
               )),
-          Positioned(
-            right: 40.0,
-            bottom: 20.0,
-            child: Image.asset(
-              'assets/images/slashdot.png',
-              height: 20.0,
-            ),
-          ),
         ],
       ),
+      floatingActionButton: RegisterBtn(eventDetail.register ?? ""),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 }
