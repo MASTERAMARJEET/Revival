@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './details.dart';
-import './event/event_model.dart';
-import './event/event_services.dart';
+import './details_page.dart';
+import '../event/event_model.dart';
+import '../event/event_services.dart';
 
 class EventsPage extends StatefulWidget {
   @override

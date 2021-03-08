@@ -3,10 +3,10 @@ import 'dart:ui';
 import 'package:demo/widgets/register_btn.dart';
 import 'package:flutter/material.dart';
 
-import './event/event_model.dart';
-import './widgets/contact.dart';
-import './widgets/heading.dart';
-import './widgets/section.dart';
+import '../event/event_model.dart';
+import '../widgets/contact.dart';
+import '../widgets/heading.dart';
+import '../widgets/section.dart';
 
 class DetailsPage extends StatelessWidget {
   final EventDetail eventDetail;

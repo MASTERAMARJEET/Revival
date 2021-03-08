@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './home.dart';
-import './events.dart';
-import './about.dart';
+import './pages/home_page.dart';
+import './pages/events_page.dart';
+import './pages/about_page.dart';
 
 void main() {
   runApp(MyApp());
