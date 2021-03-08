@@ -16,11 +16,14 @@ class _EventsPageState extends State<EventsPage> {
   @override
   void initState() {
     super.initState();
-    loadEventList('assets/data/event_details.json')
-        .then((value) => setState(() {
-              _events = value;
-              _loaded = true;
-            }));
+    loadEventList('assets/data/event_details.json').then(
+      (value) => setState(
+        () {
+          _events = value;
+          _loaded = true;
+        },
+      ),
+    );
   }
 
   @override
@@ -85,46 +88,47 @@ class _EventsPageState extends State<EventsPage> {
             ),
           ),
           Padding(
-              padding: const EdgeInsets.only(
-                left: 20.0,
-                right: 20.0,
-                top: 20.0,
-                bottom: 45.0,
-              ),
-              child: _loaded
-                  ? GridView.builder(
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        mainAxisSpacing: 20.0,
-                        crossAxisSpacing: 20.0,
-                        crossAxisCount: 2,
-                      ),
-                      itemCount: _events.length,
-                      itemBuilder: (BuildContext context, int index) {
-                        return GestureDetector(
-                          onTap: () => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => DetailsPage(_events[index]),
-                            ),
-                          ).then((value) => null),
-                          child: Card(
-                            color: Color.fromRGBO(122, 204, 252, 1),
-                            child: Center(
-                              child: Text(
-                                _events[index].name?.toUpperCase() ?? "NONE",
-                                style: TextStyle(
-                                    color: Colors.black87,
-                                    fontSize: 16.0,
-                                    fontWeight: FontWeight.bold),
-                              ),
+            padding: const EdgeInsets.only(
+              left: 20.0,
+              right: 20.0,
+              top: 20.0,
+              bottom: 45.0,
+            ),
+            child: _loaded
+                ? GridView.builder(
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      mainAxisSpacing: 20.0,
+                      crossAxisSpacing: 20.0,
+                      crossAxisCount: 2,
+                    ),
+                    itemCount: _events.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return GestureDetector(
+                        onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => DetailsPage(_events[index]),
+                          ),
+                        ).then((value) => null),
+                        child: Card(
+                          color: Color.fromRGBO(122, 204, 252, 1),
+                          child: Center(
+                            child: Text(
+                              _events[index].name?.toUpperCase() ?? "NONE",
+                              style: TextStyle(
+                                  color: Colors.black87,
+                                  fontSize: 16.0,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
-                        );
-                      },
-                    )
-                  : Center(
-                      child: new CircularProgressIndicator(),
-                    )),
+                        ),
+                      );
+                    },
+                  )
+                : Center(
+                    child: CircularProgressIndicator(),
+                  ),
+          ),
           Positioned(
             right: 40.0,
             bottom: 20.0,
