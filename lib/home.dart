@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(color: Colors.black),
         title: Center(
           child: Image.asset(
             'assets/images/logo.png',
