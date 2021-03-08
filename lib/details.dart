@@ -2,75 +2,14 @@ import 'package:flutter/material.dart';
 
 import './event/event_model.dart';
 import './widgets/contact.dart';
+import './widgets/heading.dart';
+import './widgets/section.dart';
 
 class DetailsPage extends StatelessWidget {
   final EventDetail eventDetail;
   DetailsPage(this.eventDetail);
   @override
   Widget build(BuildContext context) {
-    Widget sectionWidget(String title, List<String> list) {
-      if (list.length == 0) {
-        return Container();
-      }
-      return Column(
-        mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            alignment: Alignment.topLeft,
-            child: Text(
-              title,
-              style: TextStyle(
-                fontSize: 15,
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
-              left: 20.0,
-              top: 8.0,
-            ),
-            child: RichText(
-              text: TextSpan(
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                ),
-                children: list.map((e) => TextSpan(text: e + '\n\n')).toList(),
-              ),
-            ),
-          ),
-        ],
-      );
-    }
-
-    Widget headingWidget(String name, String desc) {
-      return Column(
-        children: [
-          Text(
-            name,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          Text(
-            desc,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 18,
-            ),
-          ),
-          SizedBox(
-            height: 20.0,
-          ),
-        ],
-      );
-    }
-
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -138,19 +77,19 @@ class DetailsPage extends StatelessWidget {
               ),
               child: ListView(
                 children: <Widget>[
-                  headingWidget(
+                  HeadingWidget(
                       eventDetail.name ?? "", eventDetail.shortDesc ?? ""),
-                  sectionWidget("About:", eventDetail.about ?? []),
-                  sectionWidget("Event Details:", eventDetail.details ?? []),
-                  sectionWidget("Prizes:", eventDetail.prize ?? []),
-                  sectionWidget("Judging Criteria:", eventDetail.judge ?? []),
-                  sectionWidget("Eligibility Criteria:",
+                  SectionWidget("About:", eventDetail.about ?? []),
+                  SectionWidget("Event Details:", eventDetail.details ?? []),
+                  SectionWidget("Prizes:", eventDetail.prize ?? []),
+                  SectionWidget("Judging Criteria:", eventDetail.judge ?? []),
+                  SectionWidget("Eligibility Criteria:",
                       eventDetail.rules?.eligible ?? []),
-                  sectionWidget("Participant’s Guidelines:",
+                  SectionWidget("Participant’s Guidelines:",
                       eventDetail.rules?.guide ?? []),
-                  sectionWidget(
+                  SectionWidget(
                       "Submission details:", eventDetail.submission ?? []),
-                  sectionWidget("Event timeline:", eventDetail.timeline ?? []),
+                  SectionWidget("Event timeline:", eventDetail.timeline ?? []),
                   ContactWidget("Contact Details", eventDetail.contact ?? []),
                 ],
               )),
