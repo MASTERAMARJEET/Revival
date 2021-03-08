@@ -49,6 +49,7 @@ flutter:
   assets:
     - assets/images/
     - assets/data/event_details.json
+    - assets/data/revival_details.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

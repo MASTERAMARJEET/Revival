@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/about.dart';
 import '../widgets/base_scaffold.dart';
 
 class AboutPage extends StatelessWidget {
@@ -24,9 +25,7 @@ class AboutPage extends StatelessWidget {
               height: 20.0,
             ),
           ),
-          Center(
-            child: Text('ABOUT US'),
-          ),
+          AboutWidget(),
         ],
       ),
     );
