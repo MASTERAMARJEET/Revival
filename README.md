@@ -11,7 +11,7 @@ A list of things to implement:
   - [x] Add register button for each event.
   - [x] Add contact details for each event with proper url launching.
   - [ ] Fill up About page.
-  - [ ] Enable pdf download for schedule and faq.
+  - [x] Enable pdf download for schedule and faq.
   - [ ] Dark Mode ??
 
 ## Getting Started with Flutter
