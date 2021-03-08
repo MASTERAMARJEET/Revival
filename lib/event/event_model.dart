@@ -24,23 +24,21 @@ class EventDetail {
       this.timeline,
       this.contact});
 
-  EventDetail.fromJson(Map<String, dynamic> json) {
-    name = json['name'];
-    insti = json['insti'];
-    shortDesc = json['short_desc'];
-    about = json['about'].cast<String>();
-    details = json['details'].cast<String>();
-    prize = json['prize'].cast<String>();
-    judge = json['judge'].cast<String>();
-    rules = json['rules'] != null ? Rules.fromJson(json['rules']) : null;
-    submission = json['submission'].cast<String>();
-    timeline = json['timeline'].cast<String>();
-    if (json['contact'] != null) {
-      List<Contact> contact = [];
-      json['contact'].forEach((v) {
-        contact.add(Contact.fromJson(v));
-      });
-    }
+  factory EventDetail.fromJson(Map<String, dynamic> json) {
+    var list = json['contact'] as List;
+    List<Contact> parsedList = list.map((e) => Contact.fromJson(e)).toList();
+    return EventDetail(
+        name: json['name'],
+        insti: json['insti'],
+        shortDesc: json['short_desc'],
+        about: json['about'].cast<String>(),
+        details: json['details'].cast<String>(),
+        prize: json['prize'].cast<String>(),
+        judge: json['judge'].cast<String>(),
+        rules: json['rules'] != null ? Rules.fromJson(json['rules']) : null,
+        submission: json['submission'].cast<String>(),
+        timeline: json['timeline'].cast<String>(),
+        contact: parsedList);
   }
 
   Map<String, dynamic> toJson() {
@@ -70,9 +68,11 @@ class Rules {
 
   Rules({this.eligible, this.guide});
 
-  Rules.fromJson(Map<String, dynamic> json) {
-    eligible = json['eligible'].cast<String>();
-    guide = json['guide'].cast<String>();
+  factory Rules.fromJson(Map<String, dynamic> json) {
+    return Rules(
+      eligible: json['eligible'].cast<String>(),
+      guide: json['guide'].cast<String>(),
+    );
   }
 
   Map<String, dynamic> toJson() {
@@ -91,11 +91,13 @@ class Contact {
 
   Contact({this.name, this.phone, this.insta, this.mail});
 
-  Contact.fromJson(Map<String, dynamic> json) {
-    name = json['name'];
-    phone = json['phone'];
-    insta = json['insta'];
-    mail = json['mail'];
+  factory Contact.fromJson(Map<String, dynamic> json) {
+    return Contact(
+      name: json['name'],
+      phone: json['phone'],
+      insta: json['insta'],
+      mail: json['mail'],
+    );
   }
 
   Map<String, dynamic> toJson() {
