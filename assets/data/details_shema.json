@@ -1,11 +1,12 @@
-{
-    "n": {
+[
+    {
         "name": "",
         "insti": "",
         "short_desc": "",
+        "register": "",
         "about": [],
         "details": [],
-        "prize": "",
+        "prize": [],
         "judge": [],
         "rules": {
             "eligible": [],
@@ -22,4 +23,4 @@
             }
         ]
     }
-}
+]
