@@ -23,10 +23,7 @@ _showUnavailableDialog(BuildContext context) {
 
 Future<void> _launchLink(String url, String error) async {
   if (await canLaunch(url)) {
-    await launch(
-      url,
-      forceWebView: true,
-    );
+    await launch(url);
   } else {
     throw error;
   }
