@@ -2,6 +2,7 @@ class EventDetail {
   String? name;
   String? insti;
   String? shortDesc;
+  String? register;
   List<String>? about;
   List<String>? details;
   List<String>? prize;
@@ -15,6 +16,7 @@ class EventDetail {
       {required this.name,
       required this.insti,
       required this.shortDesc,
+      this.register,
       this.about,
       this.details,
       this.prize,
@@ -31,6 +33,7 @@ class EventDetail {
         name: json['name'],
         insti: json['insti'],
         shortDesc: json['short_desc'],
+        register: json['register'],
         about: json['about'].cast<String>(),
         details: json['details'].cast<String>(),
         prize: json['prize'].cast<String>(),
@@ -46,6 +49,7 @@ class EventDetail {
     data['name'] = this.name;
     data['insti'] = this.insti;
     data['short_desc'] = this.shortDesc;
+    data['register'] = this.register;
     data['about'] = this.about;
     data['details'] = this.details;
     data['prize'] = this.prize;
