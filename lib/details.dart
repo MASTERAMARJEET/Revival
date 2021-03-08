@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './event/event_model.dart';
+import './widgets/contact.dart';
 
 class DetailsPage extends StatelessWidget {
   final EventDetail eventDetail;
@@ -150,6 +151,7 @@ class DetailsPage extends StatelessWidget {
                   sectionWidget(
                       "Submission details:", eventDetail.submission ?? []),
                   sectionWidget("Event timeline:", eventDetail.timeline ?? []),
+                  ContactWidget("Contact Details", eventDetail.contact ?? []),
                 ],
               )),
           Positioned(

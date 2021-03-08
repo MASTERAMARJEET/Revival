@@ -9,7 +9,7 @@ A list of things to implement:
   - [x] Create simple demo layout based on the website.
   - [x] Add details related to each event.
   - [ ] Add register button for each event.
-  - [ ] Add contact details for each event with proper url launching.
+  - [x] Add contact details for each event with proper url launching.
   - [ ] Fill up About page.
   - [ ] Enable pdf download for schedule and faq.
   - [ ] Dark Mode ??
