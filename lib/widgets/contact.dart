@@ -33,14 +33,15 @@ TextSpan _phoneText(String phone) {
 }
 
 TextSpan _instaText(String insta) {
-  if (insta.length > 0) {
+  if (insta.length > 1) {
+    String usrname = insta.substring(1);
     return TextSpan(
         text: ' ' + insta,
         style: TextStyle(color: Colors.deepPurple),
         recognizer: TapGestureRecognizer()
           ..onTap = () {
-            _launchLink(
-                'https://www.instagram.com/$insta', "Couldn't open Instagram");
+            _launchLink('https://www.instagram.com/$usrname/',
+                "Couldn't open Instagram");
           });
   }
   return TextSpan();
@@ -69,18 +70,13 @@ TextSpan _displyContact(Contact contact) {
   ]);
 }
 
-class ContactWidget extends StatefulWidget {
+class ContactWidget extends StatelessWidget {
   final String title;
   final List<Contact> list;
   ContactWidget(this.title, this.list);
   @override
-  _ContactWidgetState createState() => _ContactWidgetState();
-}
-
-class _ContactWidgetState extends State<ContactWidget> {
-  @override
   Widget build(BuildContext context) {
-    if (widget.list.length == 0) {
+    if (list.length == 0) {
       return Container();
     }
     return Column(
@@ -90,7 +86,7 @@ class _ContactWidgetState extends State<ContactWidget> {
         Container(
           alignment: Alignment.topLeft,
           child: Text(
-            widget.title,
+            title,
             style: TextStyle(
               fontSize: 15,
               fontWeight: FontWeight.w500,
@@ -109,7 +105,7 @@ class _ContactWidgetState extends State<ContactWidget> {
                 fontSize: 14,
                 fontWeight: FontWeight.w400,
               ),
-              children: widget.list.map((e) => _displyContact(e)).toList(),
+              children: list.map((e) => _displyContact(e)).toList(),
             ),
           ),
         ),
