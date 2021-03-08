@@ -11,34 +11,38 @@ class DetailsPage extends StatelessWidget {
       if (list.length == 0) {
         return Container();
       }
-      return Column(mainAxisSize: MainAxisSize.min, children: [
-        Container(
-          alignment: Alignment.topLeft,
-          child: Text(
-            title,
-            style: TextStyle(
-              fontSize: 15,
-              fontWeight: FontWeight.w500,
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(
-            left: 20.0,
-            top: 8.0,
-          ),
-          child: RichText(
-            text: TextSpan(
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            alignment: Alignment.topLeft,
+            child: Text(
+              title,
               style: TextStyle(
-                color: Colors.black,
-                fontSize: 14,
-                fontWeight: FontWeight.w400,
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
               ),
-              children: list.map((e) => TextSpan(text: e + '\n\n')).toList(),
             ),
           ),
-        ),
-      ]);
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 20.0,
+              top: 8.0,
+            ),
+            child: RichText(
+              text: TextSpan(
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 14,
+                  fontWeight: FontWeight.w400,
+                ),
+                children: list.map((e) => TextSpan(text: e + '\n\n')).toList(),
+              ),
+            ),
+          ),
+        ],
+      );
     }
 
     Widget headingWidget(String name, String desc) {
