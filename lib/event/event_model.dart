@@ -4,7 +4,7 @@ class EventDetail {
   String? shortDesc;
   List<String>? about;
   List<String>? details;
-  String? prize;
+  List<String>? prize;
   List<String>? judge;
   Rules? rules;
   List<String>? submission;
@@ -30,7 +30,7 @@ class EventDetail {
     shortDesc = json['short_desc'];
     about = json['about'].cast<String>();
     details = json['details'].cast<String>();
-    prize = json['prize'];
+    prize = json['prize'].cast<String>();
     judge = json['judge'].cast<String>();
     rules = json['rules'] != null ? Rules.fromJson(json['rules']) : null;
     submission = json['submission'].cast<String>();

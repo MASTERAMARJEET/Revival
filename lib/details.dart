@@ -137,7 +137,7 @@ class DetailsPage extends StatelessWidget {
                       eventDetail.name ?? "", eventDetail.shortDesc ?? ""),
                   sectionWidget("About:", eventDetail.about ?? []),
                   sectionWidget("Event Details:", eventDetail.details ?? []),
-                  sectionWidget("Prizes:", [eventDetail.prize ?? ""]),
+                  sectionWidget("Prizes:", eventDetail.prize ?? []),
                   sectionWidget("Judging Criteria:", eventDetail.judge ?? []),
                   sectionWidget("Eligibility Criteria:",
                       eventDetail.rules?.eligible ?? []),

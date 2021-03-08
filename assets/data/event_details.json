@@ -9,7 +9,9 @@
             "The submission with the best combined score for the short story and the cover art will be crowned as the most ARTiculate work!"
         ],
         "details": [],
-        "prize": "The winner and the runner-up of the event will be awarded a prize of INR 2000 and INR 1000 respectively.",
+        "prize": [
+            "The winner and the runner-up of the event will be awarded a prize of INR 2000 and INR 1000 respectively."
+        ],
         "judge": [
             "The literary judges will be provided with the full story, the relevant description and the cover image as well, and the literary aspect will be judged on the basis of a number point scale with different metrics (viz. creativity, grammar, structure) out of 10.",
             "The art judges will also be provided with the artwork, the description/relevance of the artwork, and the full story for reference. They will judge only the art aspect, and how well it relates to the description, on a number metric, out of 10.",
@@ -72,7 +74,7 @@
             "Do you know a lot about the latest trendy songs, stay updated about the newest Bollywood movies and the best books? Well, IISER Thiruvananthapuram is here with the perfect opportunity to put this trivia knowledge to good use - the MELA Quiz! The quiz will be focused on music, entertainment, literature and arts. An amazing platform to showcase your fine arts knowledge! Getting down to the nitty-gritty, the competition will take place in two sessions (a prelim and the final), through Discord. Teams of two can participate. Stay tuned for further updates!"
         ],
         "details": [],
-        "prize": "",
+        "prize": [],
         "judge": [],
         "rules": {
             "eligible": [
@@ -101,7 +103,9 @@
             "An online photography competition without any thematic restrictions is the perfect platform to express yourself with your pictures, woven together to tell your story. While life may have come to a standstill this year, we still have memories encased in our camera reels. So get ready to share your best clicks in this enthralling competition!"
         ],
         "details": [],
-        "prize": "There will be 3 prizes of INR 1500, INR 1000, INR 500",
+        "prize": [
+            "There will be 3 prizes of INR 1500, INR 1000, INR 500"
+        ],
         "judge": [],
         "rules": {
             "eligible": [
@@ -139,7 +143,7 @@
             "Do you miss tapping your feet to the rhythm of the dance floor? Don’t worry, ‘cause we have got you covered! Sway to the music and compete against the best in this exhilarating dance battle. Express your emotions through your moves and let yourself loose, as all pandemonium breaks loose in this electrifying contest!"
         ],
         "details": [],
-        "prize": "",
+        "prize": [],
         "judge": [
             "Judgement will be done by professionals in the field.",
             "Judgement will be done on the basis of originality, creativity, music sense, difficulty level of the performance and costume creativity."
@@ -199,7 +203,7 @@
             "The top three teams to make it to the end will be rewarded."
         ],
         "details": [],
-        "prize": "",
+        "prize": [],
         "judge": [],
         "rules": {
             "eligible": [
@@ -244,7 +248,9 @@
             "2. Entries must be submitted using the google form which will be circulated",
             "3. This is a solo online event."
         ],
-        "prize": "Prizes in each category − Winner awarded with ₹1000, runner up awarded with ₹750 for first event and ₹750 and ₹500 respectively for the second event.",
+        "prize": [
+            "Prizes in each category − Winner awarded with ₹1000, runner up awarded with ₹750 for first event and ₹750 and ₹500 respectively for the second event."
+        ],
         "judge": [
             "Will be announced shortly"
         ],
@@ -317,7 +323,9 @@
             "It has two categories,​ vocal and instrumental​.",
             "The event will be conducted in 3 rounds."
         ],
-        "prize": "Winner in each category: INR 1000​; Runner up in each category: ​INR 500; Special mention(s)",
+        "prize": [
+            "Winner in each category: INR 1000​; Runner up in each category: ​INR 500; Special mention(s)"
+        ],
         "judge": [
             "Overall Theme Correspondence and Overall Presentation",
             "Vocal will be judged based on:",
@@ -405,7 +413,7 @@
             "The participants will essentially be asked to recite poems of their own composition which will be judged by our panel. This enjoyable event is for both seasoned poets as well as amateurs just looking to have a good time. In that spirit, we eagerly await your entries to see who puts the best words in the best order and becomes the Poetry Grand Slam winner!"
         ],
         "details": [],
-        "prize": "",
+        "prize": [],
         "judge": [
             "Poems will be judged based on factors like rhyming schemes, presentation, clarity of structure and understandability."
         ],
@@ -447,7 +455,9 @@
             "Each group would be given 4 random characters and they need to evolve a plot to present all four characters in a single play.",
             "A team can choose extra two characters of their choice to assist their plot. So a maximum of 6 students can participate."
         ],
-        "prize": "1st Prize: 3000 INR; Runner’s Up: 1500 INR",
+        "prize": [
+            "1st Prize: 3000 INR; Runner’s Up: 1500 INR"
+        ],
         "judge": [
             "Facial expressions, body language, dialogue delivery by actors and theme, plot development, character utilisation of the script will be prime considerations for judgement.",
             "There will be negative marking if the upper cap of the video limit is exceeded.",
@@ -502,7 +512,7 @@
             "Are you a spendthrift who ponders a lot about the unaffordability of fashion? Are you someone who craves the joy of trying on the most novel clothing during the pandemic? Do you have a creative streak? If yes, then “trashion” is just for you! Be the trend you wish to see! Trashion presents a unique opportunity to creatively unleash your inner fashionista, that too on a budget! Design your own apparel with trash and become a fashion influencer yourself!"
         ],
         "details": [],
-        "prize": "",
+        "prize": [],
         "judge": [
             "Theme Selection, Use of materials, originality, presentation, Grooming, Confidence, Attention details with accessories and costume, Overall Impact"
         ],
