@@ -1,16 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
+import '../handle_link.dart';
 import '../event/event_model.dart';
-
-Future<void> _launchLink(String url, String error) async {
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw error;
-  }
-}
 
 TextSpan _nameText(String name) {
   if (name.length > 0) {
@@ -26,7 +18,7 @@ TextSpan _phoneText(String phone) {
         style: TextStyle(color: Colors.deepPurple),
         recognizer: TapGestureRecognizer()
           ..onTap = () {
-            _launchLink('tel:$phone', "Couldn't make call");
+            launchLink('tel:$phone', "Couldn't make call");
           });
   }
   return TextSpan();
@@ -40,7 +32,7 @@ TextSpan _instaText(String insta) {
         style: TextStyle(color: Colors.deepPurple),
         recognizer: TapGestureRecognizer()
           ..onTap = () {
-            _launchLink('https://www.instagram.com/$usrname/',
+            launchLink('https://www.instagram.com/$usrname/',
                 "Couldn't open Instagram");
           });
   }
@@ -54,7 +46,7 @@ TextSpan _mailText(String mail) {
         style: TextStyle(color: Colors.deepPurple),
         recognizer: TapGestureRecognizer()
           ..onTap = () {
-            _launchLink('mailto:$mail', "Couldn't open Mail");
+            launchLink('mailto:$mail', "Couldn't open Mail");
           });
   }
   return TextSpan();

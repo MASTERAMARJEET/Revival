@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+
+import '../handle_link.dart';
 
 _showUnavailableDialog(BuildContext context) {
   String message =
@@ -21,14 +22,6 @@ _showUnavailableDialog(BuildContext context) {
   );
 }
 
-Future<void> _launchLink(String url, String error) async {
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw error;
-  }
-}
-
 bool _linkPresent(String link) {
   if (link.length > 0) {
     return true;
@@ -45,7 +38,7 @@ class RegisterBtn extends StatelessWidget {
     return _linkPresent(link)
         ? FloatingActionButton.extended(
             onPressed: () {
-              _launchLink(link, "Couldn't load form");
+              launchLink(link, "Couldn't load form");
             },
             label: Text(
               'Register',
