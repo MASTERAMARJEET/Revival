@@ -33,14 +33,14 @@ class CustomDrawer extends StatelessWidget {
             onTap: () => _goToPage(context, '/about'),
           ),
           ListTile(
-            enabled: false,
             leading: Icon(Icons.event_note),
             title: Text('Schedule'),
+            onTap: () => _goToPage(context, '/schedule'),
           ),
           ListTile(
-            enabled: false,
             leading: Icon(Icons.question_answer),
             title: Text('FAQ'),
+            onTap: () => _goToPage(context, '/faq'),
           ),
         ],
       ),
