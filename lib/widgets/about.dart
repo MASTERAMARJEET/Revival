@@ -1,7 +1,46 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import '../handle_link.dart';
 import '../revival/revival_model.dart';
 import '../revival/revival_services.dart';
+
+TextSpan _socialMedia(String name, String link) {
+  if (link.length > 0) {
+    return TextSpan(
+        text: ' ' + name,
+        style: TextStyle(color: Colors.deepPurple),
+        recognizer: TapGestureRecognizer()
+          ..onTap = () {
+            launchLink(link, "Couldn't open $name");
+          });
+  }
+  return TextSpan(text: ' ' + name);
+}
+
+TextSpan _followText(RevivalDetail revivalDetail) {
+  return TextSpan(
+    style: TextStyle(fontWeight: FontWeight.bold),
+    children: <TextSpan>[
+      TextSpan(text: '...also follow us on'),
+      _socialMedia('Instagram', revivalDetail.insta ?? ''),
+      TextSpan(text: ' and'),
+      _socialMedia('Facebook', revivalDetail.fb ?? ''),
+      TextSpan(text: ' for constant updates'),
+    ],
+  );
+}
+
+List<TextSpan> _paraList(RevivalDetail revivalDetail) {
+  if (revivalDetail.about!.length > 1) {
+    List<TextSpan>? list =
+        revivalDetail.about?.map((e) => TextSpan(text: e + '\n\n')).toList();
+    list?.remove(list.last);
+    list?.add(_followText(revivalDetail));
+    return list!;
+  }
+  return List<TextSpan>.empty();
+}
 
 class AboutWidget extends StatefulWidget {
   @override
@@ -51,16 +90,14 @@ class _AboutWidgetState extends State<AboutWidget> {
                 ),
                 RichText(
                   textAlign: TextAlign.center,
-                  strutStyle: StrutStyle(height: 1.35),
+                  strutStyle: StrutStyle(height: 1.4),
                   text: TextSpan(
                     style: TextStyle(
                       color: Colors.black,
-                      fontSize: 14,
+                      fontSize: 15,
                       fontWeight: FontWeight.w400,
                     ),
-                    children: _revivalDetail?.about
-                        ?.map((e) => TextSpan(text: e + '\n\n'))
-                        .toList(),
+                    children: _paraList(_revivalDetail!),
                   ),
                 ),
               ],

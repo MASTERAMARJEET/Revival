@@ -24,22 +24,34 @@ class CustomDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.calendar_today),
-            title: Text('Events'),
+            title: Text(
+              'Events',
+              textScaleFactor: 1.25,
+            ),
             onTap: () => _goToPage(context, '/events'),
           ),
           ListTile(
             leading: Icon(Icons.person),
-            title: Text('About Us'),
+            title: Text(
+              'About Us',
+              textScaleFactor: 1.25,
+            ),
             onTap: () => _goToPage(context, '/about'),
           ),
           ListTile(
             leading: Icon(Icons.event_note),
-            title: Text('Schedule'),
+            title: Text(
+              'Schedule',
+              textScaleFactor: 1.25,
+            ),
             onTap: () => _goToPage(context, '/schedule'),
           ),
           ListTile(
             leading: Icon(Icons.question_answer),
-            title: Text('FAQ'),
+            title: Text(
+              'FAQ',
+              textScaleFactor: 1.25,
+            ),
             onTap: () => _goToPage(context, '/faq'),
           ),
         ],

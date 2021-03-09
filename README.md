@@ -10,7 +10,7 @@ A list of things to implement:
   - [x] Add details related to each event.
   - [x] Add register button for each event.
   - [x] Add contact details for each event with proper url launching.
-  - [ ] Fill up About page.
+  - [x] Fill up About page.
   - [x] Enable pdf download for schedule and faq.
   - [ ] Dark Mode ??
 
